@@ -23,7 +23,7 @@ namespace Amazon.DocSamples.S3
         public static void Main()
         {
             //s3Client = new AmazonS3Client(bucketRegion);
-            s3Client = new AmazonS3Client("AKIATRKXVWDHHCXH2G5Z", "STPX3OTg9Vhjn1KNIsI1D7rxpPqdRrjxwoQ9EJz/");
+            s3Client = new AmazonS3Client("Access key ID", "Secret access key");
             string urlString = GeneratePreSignedURL(timeoutDuration);
         }
         static string GeneratePreSignedURL(double duration)
